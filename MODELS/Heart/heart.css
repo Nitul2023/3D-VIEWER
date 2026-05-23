@@ -424,3 +424,499 @@ model-viewer > #ar-prompt > img {
   position: relative;
   left: 0;
 }
+
+/* =========================
+   MOBILE RESPONSIVE CSS
+   Add this at the bottom
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  nav {
+    width: 94vw;
+    left: 3vw;
+    top: 10px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .img-fluid1 {
+    max-width: 22%;
+  }
+
+  .nav-links li {
+    margin: 0 6px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  model-viewer,
+  .details,
+  .main,
+  .main2,
+  .two {
+    width: 94vw;
+    left: 3vw;
+  }
+
+  model-viewer {
+    height: 75vh;
+    margin-top: 95px;
+  }
+
+  .parts,
+  .parts2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .box {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    left: 0;
+    width: 30%;
+  }
+
+  .boxes {
+    width: 180px;
+    height: 210px;
+    margin: 15px auto;
+  }
+
+  .qr,
+  .model-view {
+    width: 45%;
+    left: 0;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 94vw;
+    left: 3vw;
+    top: 8px;
+    border-radius: 12px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .img-fluid1 {
+    max-width: 45px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: rgb(54, 63, 235);
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  model-viewer {
+    width: 94vw;
+    height: 70vh;
+    left: 3vw;
+    margin-top: 95px;
+    border-radius: 15px;
+  }
+
+  #info-panel {
+    top: 30px;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  button {
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    width: 60%;
+  }
+
+  .details {
+    width: 94vw;
+    left: 3vw;
+    height: auto;
+    min-height: 70vh;
+    padding: 35px 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  .parts,
+  .parts2 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .main,
+  .main2 {
+    width: 94vw;
+    left: 3vw;
+    height: auto;
+    min-height: 900px;
+    padding: 30px 0;
+    border-radius: 18px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxes {
+    width: 210px;
+    height: 230px;
+    margin: 20px auto;
+  }
+
+  .boxes:hover {
+    scale: 1.08;
+  }
+
+  .text {
+    margin-top: 40px;
+  }
+
+  .two {
+    width: 94vw;
+    left: 3vw;
+    top: 30px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr,
+  .model-view {
+    width: 94vw;
+    height: auto;
+    min-height: 350px;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+    margin: 15px 0;
+  }
+
+  .qr h1,
+  .model-view h1 {
+    font-size: 24px;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  nav {
+    width: 96vw;
+    left: 2vw;
+  }
+
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .img-fluid1 {
+    max-width: 40px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  model-viewer {
+    width: 96vw;
+    left: 2vw;
+    height: 65vh;
+    margin-top: 85px;
+  }
+
+  .details,
+  .main,
+  .main2,
+  .two {
+    width: 96vw;
+    left: 2vw;
+  }
+
+  .main,
+  .main2 {
+    min-height: auto;
+  }
+
+  .boxes {
+    width: 180px;
+    height: 210px;
+  }
+
+  .boxes img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .boxes:hover {
+    scale: 1.05;
+  }
+
+  .qr,
+  .model-view {
+    width: 96vw;
+    min-height: 300px;
+  }
+
+  .qr h1,
+  .model-view h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 13px;
+  }
+
+  #ar-button {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    bottom: 12px;
+  }
+}
+
+/* =========================
+   TABLET RESPONSIVE CSS
+   For iPad / Tablet screens
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 92vw;
+    left: 4vw;
+    top: 10px;
+    border-radius: 14px;
+  }
+
+  .navbar {
+    padding: 10px 18px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .img-fluid1 {
+    max-width: 70px;
+  }
+
+  .nav-links {
+    padding-left: 0;
+  }
+
+  .nav-links li {
+    margin: 0 6px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  model-viewer {
+    width: 92vw;
+    height: 78vh;
+    left: 4vw;
+    margin-top: 95px;
+    border-radius: 18px;
+  }
+
+  #info-panel {
+    top: 50px;
+    left: 4vw;
+    padding: 15px;
+  }
+
+  .details {
+    width: 92vw;
+    left: 4vw;
+    height: auto;
+    min-height: 70vh;
+    padding: 40px 25px;
+    font-size: 22px;
+    box-sizing: border-box;
+  }
+
+  .parts,
+  .parts2 {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .main,
+  .main2 {
+    width: 92vw;
+    left: 4vw;
+    height: auto;
+    min-height: 900px;
+    padding: 40px 0;
+    border-radius: 22px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 30%;
+    left: 0;
+  }
+
+  .boxes {
+    width: 180px;
+    height: 220px;
+    margin: 18px auto;
+  }
+
+  .boxes img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .boxes:hover {
+    scale: 1.12;
+  }
+
+  .text {
+    margin-top: 50px;
+  }
+
+  .two {
+    width: 92vw;
+    left: 4vw;
+    top: 60px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .qr,
+  .model-view {
+    width: 50%;
+    height: auto;
+    min-height: 450px;
+    left: 0;
+    top: 0;
+    padding: 35px 0;
+  }
+
+  .qr h1,
+  .model-view h1 {
+    font-size: 28px;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  .progress-bar {
+    width: 45%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}

@@ -2626,3 +2626,383 @@ select.mobile-device {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+/* =========================
+   RESPONSIVE FIX ONLY
+   Paste at the bottom
+   Desktop design will not change
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Fix images from overflowing */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix 3D model cards image alignment without changing desktop too much */
+.services-inner-box {
+  overflow: hidden;
+}
+
+.services-inner-box img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+   769px to 1024px
+========================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 94%;
+  }
+
+  .navbar-brand {
+    max-width: 180px;
+  }
+
+  .img-fluid1 {
+    max-width: 70px !important;
+    height: auto;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .heading h1 {
+    font-size: 48px;
+  }
+
+  .cd-headline.clip span {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .section-title h3 {
+    font-size: 32px;
+    line-height: 45px !important;
+  }
+
+  .message-box h2 {
+    font-size: 32px;
+    line-height: 45px !important;
+  }
+
+  .message-box p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .right-box-pro::before {
+    right: -10px;
+    bottom: -10px;
+  }
+
+  .services-inner-box {
+    padding: 18px;
+    border-radius: 35px 35px 0px 35px;
+    min-height: 430px;
+  }
+
+  .services-inner-box img {
+    height: 170px;
+    width: 140px;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .services-inner-box img:hover {
+    transform: translateX(-50%) scale(1.12);
+  }
+
+  .services-inner-box h2 {
+    font-size: 20px;
+  }
+
+  .services-inner-box p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .our-team .title {
+    font-size: 18px;
+  }
+
+  .row2 {
+    left: 0 !important;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact_form {
+    padding: 30px 25px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   768px and below
+========================= */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #mainNav {
+    background-color: #ffffff !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  .navbar-brand {
+    max-width: 130px;
+  }
+
+  .img-fluid1 {
+    max-width: 55px !important;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    background-color: #28a9e2;
+    border: none;
+    color: #ffffff !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #28a9e2 !important;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+
+  .main-banner {
+    height: 80vh;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  .heading {
+    padding: 0 15px;
+  }
+
+  .heading h1 {
+    font-size: 34px;
+    line-height: 1.2 !important;
+  }
+
+  .cd-headline.clip span {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 45px 0;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h3 {
+    font-size: 28px;
+    line-height: 36px !important;
+  }
+
+  .section-title p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .message-box {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .message-box h2 {
+    font-size: 28px;
+    line-height: 36px !important;
+  }
+
+  .message-box p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .right-box-pro {
+    margin-top: 20px;
+  }
+
+  .right-box-pro::before {
+    display: none;
+  }
+
+  .services-inner-box {
+    padding: 18px;
+    border-radius: 30px 30px 0px 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .services-inner-box img {
+    height: 160px;
+    width: 140px;
+    left: 50% !important;
+    transform: translateX(-50%);
+    display: block;
+  }
+
+  .services-inner-box img:hover {
+    transform: translateX(-50%) scale(1.08);
+  }
+
+  .services-inner-box h2 {
+    font-size: 20px;
+  }
+
+  .services-inner-box p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .our-team {
+    margin-bottom: 30px;
+  }
+
+  .our-team .title {
+    font-size: 18px;
+  }
+
+  .row2 {
+    left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row2 .col-md-3 {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .contact_form {
+    padding: 25px 18px;
+  }
+
+  .contact_form .form-control {
+    font-size: 14px;
+    padding: 10px 15px;
+    height: 50px;
+  }
+
+  .contact_form textarea.form-control {
+    min-height: 160px;
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .footer-company-name {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   480px and below
+========================= */
+
+@media screen and (max-width: 480px) {
+  .heading h1 {
+    font-size: 28px;
+  }
+
+  .cd-headline.clip span {
+    font-size: 15px;
+  }
+
+  .section-title h3 {
+    font-size: 24px;
+  }
+
+  .message-box h2 {
+    font-size: 24px;
+  }
+
+  .services-inner-box img {
+    height: 135px;
+    width: 120px;
+  }
+
+  .services-inner-box h2 {
+    font-size: 18px;
+  }
+
+  .services-inner-box p {
+    font-size: 13px;
+  }
+
+  .our-team .title {
+    font-size: 16px;
+  }
+
+  .contact_form {
+    padding: 20px 14px;
+  }
+
+  .sim-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
